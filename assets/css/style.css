@@ -1,0 +1,24 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+.list-group {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#button {
+    align-self: center;
+} 
+
+.card-body {
+    text-align: center;
+}
+
+.card-header {
+    text-align: center;
+}
