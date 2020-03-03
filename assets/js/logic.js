@@ -114,7 +114,9 @@ $(document).ready(function () {
         answer: 1,
         photo: "assets/imgs/"
     }
-    ]});
+
+
+    ]
 
     var number = 20;
     var userChoice = "";
@@ -137,10 +139,12 @@ $(document).ready(function () {
     $("#timer").show();
     });
   
-    $("#play").on("click", run);
+    $("#play").on("click", run,);
 
     function run() {
+      number=20;
       intervalId = setInterval(decrement, 1000);
+      displayQuestion()
     }
 
     function decrement() {
@@ -154,7 +158,10 @@ $(document).ready(function () {
         stop();
 
         alert("Time Up!");
+        
+        run()
       }
+      
     }
 
     function stop() {
@@ -163,3 +170,29 @@ $(document).ready(function () {
     }
 
     run();
+
+    function displayQuestion (){
+        var i = Math.floor (Math.random()*options.length);
+        var q = options[i];
+        console.log(q)
+        $("#question").text(q.question);
+        $("#list").empty();
+        
+        for (var i = 0; i < q.choice.length; i++){
+            var item = $("<li>").text(q.choice[i]);
+            $("#list").append(item);
+
+        }
+          
+
+        
+
+    }
+
+// {
+//         question: "Which planet's moons are named (in translation) 'fear' and 'dread'?",
+//         choice: ["Jupiter", "Mars", "Neptune", "Mercury"],
+//         answer: 1,
+//         photo: "assets/imgs/"
+//     },
+});
