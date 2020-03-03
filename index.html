@@ -17,7 +17,57 @@
         <p class="lead">This is an astronomy themed trivia game.</p>
         <hr class="my-4">
         <p>Click the button to play</p>
-        <a class="btn btn-dark btn-lg" href="index2.html" role="button">Play</a>
+        <a class="btn btn-dark btn-lg" id="playbutton" role="button">Play</a>
+    </div>
+
+    <div class="row">
+        <div class="col-md-9">
+            <div id="question" class="alert alert-dark" role="alert">
+                Question
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div id="timer" class="card">
+                <div class="card-body">
+                    00:00
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div id="list" class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">Answer</a>
+                <a href="#" class="list-group-item list-group-item-action">Answer</a>
+                <a href="#" class="list-group-item list-group-item-action">Answer</a>
+                <a href="#" class="list-group-item list-group-item-action">Answer</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div id="card" class="card mb-4">
+                <div class="card-header">
+                    Win Count
+                </div>
+                <div class="card-body">
+                    <h3 class="text-center" id="win-count">0</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div id="card" class="card mb-4">
+                <div class="card-header">
+                    Loss Count
+                </div>
+                <div class="card-body">
+                    <h3 class="text-center" id="loss-count">0</h3>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

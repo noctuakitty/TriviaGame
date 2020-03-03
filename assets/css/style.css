@@ -22,3 +22,15 @@ body {
 .card-header {
     text-align: center;
 }
+
+#question {
+    text-align: center;
+}
+
+#playbutton {
+    color: whitesmoke;
+}
+
+#timer {
+    text-align: center;
+}
