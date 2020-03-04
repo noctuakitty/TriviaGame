@@ -31,6 +31,10 @@ body {
     color: whitesmoke;
 }
 
+#resetbutton {
+    color: whitesmoke;
+}
+
 #timer {
     text-align: center;
 }
