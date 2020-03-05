@@ -226,7 +226,7 @@ $(document).ready(function() {
 
 	function displayPicture(thisPicture) {
 		$(".picture").empty();
-		$(".picture").append($("<img>").attr("src", thisPicture));
+		$(".picture").append($("<img>").attr("src", thisPicture ,{'width':400, 'height':350}));
 		$(".picture").show();
 		setTimeout( displayQuestion
 			, 3000);
