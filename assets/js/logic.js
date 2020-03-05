@@ -140,6 +140,7 @@ $(document).ready(function() {
 	$('#question').hide();
 	$('#timer').hide();
 	$('.picture').hide();
+	$("#resetbutton").hide();
 
 	$('#playbutton').click(function(play) {
 		$('.card-header').show();
@@ -147,6 +148,7 @@ $(document).ready(function() {
 		$('#list').show();
 		$('#question').show();
 		$('#timer').show();
+		$("#resetbutton").show();
 	});
 
 	$('#playbutton').on('click', run);
@@ -230,7 +232,7 @@ $(document).ready(function() {
 			, 3000);
 	}
 
-	function reset() {
+	$('#resetbutton').click(function(reset) {
 		$('.card-header').hide();
 		$('.card-body').hide();
 		$('#list').hide();
@@ -238,5 +240,7 @@ $(document).ready(function() {
 		$('#timer').hide();
 		$('.picture').hide();
 		$('#resetbutton').hide();
-	}
+		stop();
+	});
+
 });
